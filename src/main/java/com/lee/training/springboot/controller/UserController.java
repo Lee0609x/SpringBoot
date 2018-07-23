@@ -26,6 +26,6 @@ public class UserController {
     }
     @PostMapping("register")
     public int register(String username, String userpass) {
-        return userService.register(username, userpass, "测试");
+        return userService.register(username, userpass, "test");
     }
 }
