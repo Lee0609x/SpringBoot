@@ -10,7 +10,6 @@ import org.springframework.stereotype.Repository;
 /**
  * @Author: Lee0609x
  * @Date: 2018/7/22 21:03
- * 查询SQL常量名规则：方法名_参数1_参数2...
  */
 @Mapper
 @Repository
