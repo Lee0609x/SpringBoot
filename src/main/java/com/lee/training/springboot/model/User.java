@@ -7,6 +7,10 @@ import java.sql.Timestamp;
  * @Date: 2018/7/22 20:52
  */
 public class User {
+    public User() {
+        super();
+    }
+
     public User(String userid, String username, String userpass, Timestamp jointime, String loginip) {
         this.userid = userid;
         this.username = username;
@@ -59,5 +63,16 @@ public class User {
 
     public void setLoginip(String loginip) {
         this.loginip = loginip;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "userid='" + userid + '\'' +
+                ", username='" + username + '\'' +
+                ", userpass='" + userpass + '\'' +
+                ", jointime=" + jointime +
+                ", loginip='" + loginip + '\'' +
+                '}';
     }
 }
